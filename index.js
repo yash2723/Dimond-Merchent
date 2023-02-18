@@ -8,7 +8,7 @@ connectDB(DATABASE_URL)
 const port = '3000';
 
 app.use(express.json())
-app.use("/worker", web)
+app.use("/api", web)
 
 app.listen(port, () => {
     console.log("Server is started...")

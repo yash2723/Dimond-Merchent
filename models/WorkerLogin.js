@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const workerSchema = new mongoose.Schema({
+const workerLoginSchema = new mongoose.Schema({
     email : {type: String},
     password : {type: String},
     name : {type: String},
@@ -8,6 +8,6 @@ const workerSchema = new mongoose.Schema({
     address : {type: String}
 })
 
-const WorkerModel = mongoose.model("worker", workerSchema);
+const WorkerLoginModel = mongoose.model("WorkerLogin", workerLoginSchema);
 
-export default WorkerModel;
+export default WorkerLoginModel;
