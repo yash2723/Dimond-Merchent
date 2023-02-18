@@ -1,0 +1,6 @@
+# ignore ALL .log files
+*.log
+package-lock.json
+
+# ignore ALL files in ANY directory named temp
+node_modules/
