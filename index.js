@@ -5,7 +5,7 @@ import web from "./routes/web.js"
 const app = express()
 const DATABASE_URL = "mongodb://localhost:27017";
 connectDB(DATABASE_URL)
-const port = '3000';
+const port = '8088';
 
 app.use(express.json())
 app.use("/api", web)

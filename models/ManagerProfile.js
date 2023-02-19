@@ -1,15 +1,15 @@
-import { Int32 } from "bson";
 import mongoose from "mongoose";
 
-const workerProfileSchema = new mongoose.Schema({
+const managerProfileSchema = new mongoose.Schema({
     email : {type: String},
     date : {type: Date},
     assignWork : {type: String},
     completedWork : {type: String},
     defectedWork : {type: String},
+    remainingWork : {type: String},
     salary : {type: String}
 })
 
-const WorkerProfileModel = mongoose.model("WorkerProfile", workerProfileSchema);
+const ManagerProfileModel = mongoose.model("managerProfile", managerProfileSchema);
 
-export default WorkerProfileModel;
+export default ManagerProfileModel;
